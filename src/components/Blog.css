@@ -144,3 +144,162 @@ font-size:14px;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+.choice-page{
+  height:100vh;
+  background:#f3f6f9;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width: 1200px;
+  color:black;
+}
+
+.choice-title{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:60px;
+  color:#2f3e46;
+}
+
+.choice-container{
+  display:flex;
+  gap:60px;
+}
+
+.choice-card{
+  width:380px;
+  background:white;
+  border-radius:12px;
+  padding:40px;
+  text-align:center;
+  cursor:pointer;
+  border:1px solid #dbe2ea;
+  transition:0.3s;
+}
+
+.choice-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.choice-card img{
+  width:290px;
+  margin-bottom:20px;
+}
+
+.choice-card h3{
+  font-size:22px;
+  margin-bottom:10px;
+  color:#0d99ff;
+}
+.choice-icon{
+    width: 300px;
+}
+.choice-card p{
+  color:black;
+  font-size:16px;
+}
+.choice-image{
+width:70px;
+height:70px;
+margin-bottom:15px;
+object-fit:contain;
+}
+
+@media (max-width: 992px) {
+  .choice-page {
+    width: 90%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .choice-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .choice-card {
+    width: 45%;
+    padding: 30px;
+  }
+
+  .choice-title {
+    font-size: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+/* TABLET / LARGE MOBILE: 768px and below */
+@media (max-width: 768px) {
+  .choice-page {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .choice-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .choice-card {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .choice-title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* MOBILE: 480px and below */
+@media (max-width: 480px) {
+  .choice-page {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .choice-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .choice-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .choice-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .choice-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .choice-card h3 {
+    font-size: 18px;
+  }
+
+  .choice-card p {
+    font-size: 14px;
+  }
+}
