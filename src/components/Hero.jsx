@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./home.css";
 
 function Hero() {
- const BASE_URL = "http://127.0.0.1:8000";
+ const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const [image, setImage] = useState("");
   const navigate = useNavigate();
 
