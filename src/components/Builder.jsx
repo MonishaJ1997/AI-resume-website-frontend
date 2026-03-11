@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 const Builder = () => {
   const location = useLocation();
   const [logo, setLogo] = useState("");
-   const BASE_URL = "http://127.0.0.1:8000";
+   const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const prefillData = location.state?.prefillData || {};
 
   const [step, setStep] = useState(1);
