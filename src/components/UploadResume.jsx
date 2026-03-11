@@ -35,7 +35,7 @@ const [logo, setLogo] = useState("");
       alert("Upload failed. Check console.");
     }
   };
-fetch(`${BASE_URL}api/logo/`)
+fetch(`${BASE_URL}/api/logo/`)
       .then(res => res.json())
       .then(data => {
         setLogo(data.image);
