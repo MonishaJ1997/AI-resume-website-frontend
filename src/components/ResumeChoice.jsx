@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import { useState, useEffect } from "react";
-import "./resume.css";
+import "./Blog.css";
 import Footer from "../components/Footer"
 function ResumeChoice() {
  const BASE_URL = "https://ai-resume-website-backend.onrender.com";
