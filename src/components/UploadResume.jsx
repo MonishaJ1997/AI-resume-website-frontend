@@ -46,8 +46,8 @@ fetch("http://127.0.0.1:8000/api/logo/")
       <div className="navbar">
         <div className="logo">
         {logo && (
-          <img
-            src={`http://127.0.0.1:8000${logo}`}
+         <img
+            src={`${BASE_URL}${logo}`}
             alt="logo"
           />
         )}
