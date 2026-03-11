@@ -1,0 +1,305 @@
+/* =========================
+   PRICING PAGE BASE STYLES
+========================= */
+
+.pricing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 140%;
+  max-width: 1210px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+/* SECTION */
+.pricing-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8fafc;
+  flex: 1;
+}
+
+.pricing-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.pricing-section p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* TOGGLE */
+.toggle {
+  display: inline-flex;
+  background: #ddd;
+  border-radius: 40px;
+  padding: 6px;
+  margin-bottom: 40px;
+}
+
+.toggle span {
+  padding: 10px 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle .active {
+  background: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  color: #1e88e5;
+}
+
+/* CARDS CONTAINER */
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  width: 260px;
+  min-height: 420px;
+  border: 1px solid #e5e7eb;
+  padding: 22px;
+  border-radius: 12px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: #1e88e5;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.card h3 span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* FEATURES */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* TICK */
+.yes::before {
+  content: "✓";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #1e88e5;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* CROSS */
+.no::before {
+  content: "✕";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: #e53935;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: auto;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1565c0;
+}
+
+/* PRO CARD */
+.pro {
+  border: 2px solid #1e88e5;
+  position: relative;
+}
+
+.popular {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e88e5;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* =========================
+   MEDIA QUERIES - PRICING SECTION
+========================= */
+
+/* LARGE SCREENS: 1200px+ */
+
+
+/* LARGE TABLET / SMALL LAPTOP: 992px and below */
+@media (max-width: 992px) {
+    .pricing-section{
+        width: 80%;
+    }
+  .pricing-section h1 {
+    font-size: 30px;
+  }
+
+  .pricing-section p {
+    font-size: 16px;
+  }
+
+  .toggle span {
+    padding: 9px 20px;
+    font-size: 15px;
+  }
+
+  .pricing-cards {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+    min-height: 400px;
+  }
+}
+
+/* TABLET: 768px and below */
+@media (max-width: 768px) {
+    .pricing-page{
+        width: 80%;
+    }
+  .pricing-section h1 {
+    font-size: 28px;
+  }
+
+  .pricing-section p {
+    font-size: 15px;
+  }
+
+  .toggle {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .toggle span {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* MOBILE: 600px and below */
+@media (max-width: 600px) {
+  .pricing-section h1 {
+    font-size: 24px;
+  }
+
+  .pricing-section p {
+    font-size: 14px;
+  }
+
+  .toggle {
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 25px;
+  }
+
+  .toggle span {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .toggle span.active {
+    font-weight: 600;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .popular {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}

@@ -1,0 +1,80 @@
+/* Sidebar Container */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  
+  left: 0;
+  top: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* User Section */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Username */
+.user span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Menu List */
+.menu {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  flex: 1;
+}
+
+/* Menu Items */
+.menu li {
+  margin: 4px 0;
+}
+
+/* Links */
+.menu a {
+  display: block;
+  padding: 12px 22px;
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.menu a:hover {
+  background: rgba(255,255,255,0.05);
+  color: white;
+  border-left: 3px solid #6366f1;
+}
+
+/* Active Link (NavLink automatically applies active class) */
+.menu a.active {
+  background: rgba(99,102,241,0.15);
+  color: #ffffff;
+  border-left: 3px solid #6366f1;
+}
