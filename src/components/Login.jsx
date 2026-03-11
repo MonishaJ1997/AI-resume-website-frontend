@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./home.css";
 
 function Login() {
- const BASE_URL = "http://127.0.0.1:8000";
+ const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const navigate = useNavigate();
 
   const [logo, setLogo] = useState("");
