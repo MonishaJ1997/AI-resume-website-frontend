@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./resumeChoice.css";
+import "./resume.css";
 import { useState, useEffect } from "react";
 import Footer from "../components/Footer"
 function ResumeChoice() {
@@ -68,7 +68,7 @@ function ResumeChoice() {
 
             {icons[0] && (
               <img
-                src={`http://127.0.0.1:8000${icons[0].icon}`}
+                src={`${BASE_URL}${icons[0].icon}`}
                 alt="upload"
                 className="choice-image"
               />

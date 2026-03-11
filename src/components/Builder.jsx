@@ -64,7 +64,7 @@ const navigate = useNavigate();
   };
 
   useEffect(() => {
-    fetch(`${BASE_URL}//api/logo/`)
+    fetch(`${BASE_URL}/api/logo/`)
       .then((res) => res.json())
       .then((data) => {
         setLogo(data.image);

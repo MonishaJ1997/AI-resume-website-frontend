@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
-import "./templates.css";
+import "./Templates.css";
 import Footer from "./Footer";
 
 function Templates() {
