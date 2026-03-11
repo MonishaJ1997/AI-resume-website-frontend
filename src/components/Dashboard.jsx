@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 function Dashboard() {
 
   const navigate = useNavigate();
- const BASE_URL = "http://127.0.0.1:8000";
+ const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const [showChatbot, setShowChatbot] = useState(false);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
