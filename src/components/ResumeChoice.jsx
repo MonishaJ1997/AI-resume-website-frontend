@@ -88,7 +88,7 @@ function ResumeChoice() {
 
             {icons[1] && (
               <img
-                src={`http://127.0.0.1:8000${icons[1].icon}`}
+                src={`${BASE_URL}${icons[1].icon}`}
                 alt="scratch"
                 className="choice-image"
               />
