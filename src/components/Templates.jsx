@@ -6,7 +6,7 @@ import "./Templates.css";
 import Footer from "./Footer";
 
 function Templates() {
-   const BASE_URL = "http://127.0.0.1:8000";
+   const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const [templates, setTemplates] = useState([]);
   const [filter, setFilter] = useState("all");
   const [showPopup, setShowPopup] = useState(false);
