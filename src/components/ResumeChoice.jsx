@@ -3,7 +3,7 @@ import "./resume.css";
 import { useState, useEffect } from "react";
 import Footer from "../components/Footer"
 function ResumeChoice() {
- const BASE_URL = "http://127.0.0.1:8000";
+ const BASE_URL = "https://ai-resume-website-backend.onrender.com";
   const navigate = useNavigate();
 
   const [logo, setLogo] = useState("");
