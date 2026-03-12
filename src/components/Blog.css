@@ -1,5 +1,6 @@
 .blog-page{
      min-height: 100vh;
+     width:100vw;
 }
 
 
@@ -10,7 +11,7 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 margin-top:20px;
- width: 1170px;
+ 
 }
 
 .blog-card{
