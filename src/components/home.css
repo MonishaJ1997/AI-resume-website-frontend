@@ -4,6 +4,7 @@ body{
 font-family: 'Inter', sans-serif;
 cursor: pointer;
 background:#FFFFFF;
+  width:100%;
 }
 .navbar{
   display:flex;
