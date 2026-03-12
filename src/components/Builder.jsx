@@ -48,9 +48,10 @@ const navigate = useNavigate();
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
 
-  const generatePDF = () => {
+ const generatePDF = () => {
     const element = document.getElementById("resume");
     if (!element) return alert("Resume not found!");
+     element.style.width = "794px";
 
     const opt = {
       margin: 0.3,
@@ -60,8 +61,16 @@ const navigate = useNavigate();
       jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
     };
 
-    html2pdf().set(opt).from(element).save();
-  };
+    html2pdf()
+    .set(opt)
+    .from(element)
+    .save()
+    .then(() => {
+      // revert back to preview width
+      element.style.width = "320px";
+    });
+};
+  
 
   useEffect(() => {
     fetch(`${BASE_URL}/api/logo/`)
