@@ -4,7 +4,7 @@
 .builder-container {
   display: flex;
   min-height: calc(100vh - 70px);
-  width: 1200px;
+  width: 100vwpx;
   margin: 0 auto;
   flex-direction: row;
   gap: 20px;
