@@ -100,13 +100,23 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:80px;
-  width:100vw;
+ width:100%;
+  box-sizing:border-box;
 }
 
 .hero-left{
-max-width:500px;
+flex:1;
+  max-width:600px;
 }
-
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
+}
+.hero-right img{
+  width:350px;
+  max-width:100%;
+}
 .badge{
 background:#8ECEFD;
 color:#0D99FF;
@@ -145,10 +155,6 @@ border:none;
 .templates{
 border:1px solid #B3B3B3;
 background:white;
-}
-
-.hero-right img{
-width:220px;
 }
 
 
